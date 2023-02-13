@@ -1,0 +1,13 @@
+package io.woocheonjae.hirolling;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class HiRollingApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HiRollingApplication.class, args);
+	}
+
+}
