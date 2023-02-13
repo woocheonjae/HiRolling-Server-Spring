@@ -21,6 +21,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ACTIONS }}
+          submodules: true
       - uses: actions/setup-java@v3
         with:
           java-version: '17'
@@ -28,7 +31,7 @@ jobs:
 
       - name: Run chmod to make gradlew executable
         run: chmod +x ./gradlew
-        
+
       - name: Validate Gradle wrapper
         uses: gradle/wrapper-validation-action@v1
 
